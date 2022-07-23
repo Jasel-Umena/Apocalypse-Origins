@@ -1,0 +1,3 @@
+C:\Users\JaselUmena\Desktop\Game files\Minecraft\Apocalypse Origins\obj\Debug\FromExistingCode1.njsproj.AssemblyReference.cache
+C:\Users\JaselUmena\Desktop\Game files\Minecraft\Apocalypse Origins\obj\Debug\FromExistingCode1.njsproj.CoreCompileInputs.cache
+C:\Users\JaselUmena\Desktop\Game files\Minecraft\Apocalypse Origins\bin\Microsoft.NodejsTools.WebRole.dll

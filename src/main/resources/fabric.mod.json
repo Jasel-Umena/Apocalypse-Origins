@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "id": "apocalypse",
+  "version": "0.3.0",
+
+  "name": "Apocalypse Origins",
+  "description": "Adds Jasel Umena's Apocalypse origins. Requires Origins 1.17 or higher to work.",
+  "authors": [
+    "Jasel Umena"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "Custom License",
+  "icon": "assets/apocalypse/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.apocalypseorigins.apocalypse"
+    ]
+  },
+  "mixins": [
+
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}

@@ -1,0 +1,37 @@
+{
+    "apocalypse.ost.sss" : {
+        "sounds": [
+            "ost/sss"
+        ]
+    },
+    "apocalypse.ost.sagacity" : {
+        "sounds": [
+            "ost/sagacity"
+        ]
+    },
+    "apocalypse.ost.smite" : {
+        "sounds": [
+            "ost/smite"
+        ]
+    },
+    "apocalypse.ost.bonk" : {
+        "sounds": [
+            "ost/bonk"
+        ]
+    },
+    "apocalypse.ost.fwomp" : {
+        "sounds": [
+            "ost/fwomp"
+        ]
+    },
+    "apocalypse.ost.echolocation" : {
+        "sounds": [
+            "ost/echolocation"
+        ]
+    },
+    "apocalypse.ost.growl" : {
+        "sounds": [
+            "ost/growl"
+        ]
+    }
+}

@@ -8,14 +8,14 @@ import net.minecraft.util.registry.Registry;
 
 public class apocalypse implements ModInitializer {
 	
-	public static final Item SYRINGE = new Item(new Item.Settings().group(ItemGroup.MISC));
-	public static final Item SYRINGE_LIVING = new Item(new Item.Settings().group(ItemGroup.MISC));
-	public static final Item SYRINGE_AQUATIC = new Item(new Item.Settings().group(ItemGroup.MISC));
-	public static final Item SYRINGE_ARTHROPOD = new Item(new Item.Settings().group(ItemGroup.MISC));
-	public static final Item SYRINGE_CREEPER = new Item(new Item.Settings().group(ItemGroup.MISC));
-	public static final Item SYRINGE_END = new Item(new Item.Settings().group(ItemGroup.MISC));
-	public static final Item SYRINGE_NETHER = new Item(new Item.Settings().group(ItemGroup.MISC));
-	public static final Item SYRINGE_UNDEAD = new Item(new Item.Settings().group(ItemGroup.MISC));
+	public static final Item SYRINGE = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
+	public static final Item SYRINGE_LIVING = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
+	public static final Item SYRINGE_AQUATIC = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
+	public static final Item SYRINGE_ARTHROPOD = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
+	public static final Item SYRINGE_CREEPER = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
+	public static final Item SYRINGE_END = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
+	public static final Item SYRINGE_NETHER = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
+	public static final Item SYRINGE_UNDEAD = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
 	public static final Item APOCALYPSE_WOODEN_SWORD = new Item(new Item.Settings().group(ItemGroup.COMBAT));
 
 	@Override

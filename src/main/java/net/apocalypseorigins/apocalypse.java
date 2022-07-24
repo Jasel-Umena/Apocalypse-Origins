@@ -9,7 +9,7 @@ import net.minecraft.util.registry.Registry;
 
 public class apocalypse implements ModInitializer {
 	
-	public static final Item SYRINGE = new SwordItem(Syringe.INSTANCE, 0,0,new Item.Settings().group(ItemGroup.MISC).maxDamage(1));
+	public static final Item SYRINGE = new SwordItem(Syringe.INSTANCE, 0,0,new Item.Settings().group(ItemGroup.MISC).maxDamage(2));
 	public static final Item SYRINGE_LIVING = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 	public static final Item SYRINGE_AQUATIC = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 	public static final Item SYRINGE_ARTHROPOD = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
@@ -18,6 +18,8 @@ public class apocalypse implements ModInitializer {
 	public static final Item SYRINGE_NETHER = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 	public static final Item SYRINGE_UNDEAD = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 	public static final Item SYRINGE_ACTIVE = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
+	public static final Item STABILIZER = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
+	public static final Item ANALYZER = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 
 	@Override
 	public void onInitialize() {
@@ -30,6 +32,8 @@ public class apocalypse implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe_nether"), SYRINGE_NETHER);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe_undead"), SYRINGE_UNDEAD);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe_active"), SYRINGE_ACTIVE);
+		Registry.register(Registry.ITEM, new Identifier("apocalypse", "stabilizer"), STABILIZER);
+		Registry.register(Registry.ITEM, new Identifier("apocalypse", "analyzer"), ANALYZER);
 	}
 	
 }

@@ -7,5 +7,7 @@
     "item.apocalypse.syringe_living": "Syringe (Living Mob Gene)",
     "item.apocalypse.syringe_nether": "Syringe (Nether Mob Gene)",
     "item.apocalypse.syringe_undead": "Syringe (Undead Mob Gene)",
-    "item.apocalypse.syringe_active": "Syringe (Active Gene)"
+    "item.apocalypse.syringe_active": "Syringe (Active Gene)",
+    "item.apocalypse.stabilizer": "Genome Stabilizer",
+    "item.apocalypse.analyzer": "Genome Analyzer"
 }

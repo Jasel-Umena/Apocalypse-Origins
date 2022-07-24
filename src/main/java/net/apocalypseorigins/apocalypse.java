@@ -3,20 +3,21 @@ package net.apocalypseorigins;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
+import net.minecraft.item.SwordItem;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 
 public class apocalypse implements ModInitializer {
 	
-	public static final Item SYRINGE = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
-	public static final Item SYRINGE_LIVING = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
-	public static final Item SYRINGE_AQUATIC = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
-	public static final Item SYRINGE_ARTHROPOD = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
-	public static final Item SYRINGE_CREEPER = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
-	public static final Item SYRINGE_END = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
-	public static final Item SYRINGE_NETHER = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
-	public static final Item SYRINGE_UNDEAD = new Item(new Item.Settings().group(ItemGroup.MISC).maxDamage(0));
-	public static final Item APOCALYPSE_WOODEN_SWORD = new Item(new Item.Settings().group(ItemGroup.COMBAT));
+	public static final Item SYRINGE = new SwordItem(Syringe.INSTANCE, 0,0,new Item.Settings().group(ItemGroup.MISC).maxDamage(1));
+	public static final Item SYRINGE_LIVING = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
+	public static final Item SYRINGE_AQUATIC = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
+	public static final Item SYRINGE_ARTHROPOD = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
+	public static final Item SYRINGE_CREEPER = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
+	public static final Item SYRINGE_END = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
+	public static final Item SYRINGE_NETHER = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
+	public static final Item SYRINGE_UNDEAD = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
+	public static final Item SYRINGE_ACTIVE = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 
 	@Override
 	public void onInitialize() {
@@ -28,6 +29,7 @@ public class apocalypse implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe_end"), SYRINGE_END);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe_nether"), SYRINGE_NETHER);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe_undead"), SYRINGE_UNDEAD);
+		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe_active"), SYRINGE_ACTIVE);
 	}
 	
 }

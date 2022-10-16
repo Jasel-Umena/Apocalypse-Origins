@@ -22,6 +22,7 @@ public class apocalypse implements ModInitializer {
 	public static final Item ANALYZER = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 	public static final Item MUTAGENS = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 	public static final Item RNABACKUP = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
+	public static final Item ANTIMUTAGENS = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 
 	@Override
 	public void onInitialize() {
@@ -38,6 +39,7 @@ public class apocalypse implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "analyzer"), ANALYZER);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "mutagens"), MUTAGENS);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "rnabackup"), RNABACKUP);
+		Registry.register(Registry.ITEM, new Identifier("apocalypse", "antimutagens"), ANTIMUTAGENS);
 	}
 	
 }

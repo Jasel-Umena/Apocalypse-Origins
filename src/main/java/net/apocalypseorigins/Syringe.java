@@ -1,5 +1,6 @@
 package net.apocalypseorigins;
 
+import net.minecraft.item.Items;
 import net.minecraft.item.ToolMaterial;
 import net.minecraft.recipe.Ingredient;
 
@@ -28,11 +29,11 @@ public class Syringe implements ToolMaterial {
 
     @Override
     public int getEnchantability() {
-        return 0;
+        return 22;
     }
 
     @Override
     public Ingredient getRepairIngredient() {
-        return null;
+        return Ingredient.ofStacks(Items.GLASS.getDefaultStack());
     }
 }

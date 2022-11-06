@@ -10,7 +10,7 @@ import net.minecraft.util.registry.Registry;
 public class apocalypse implements ModInitializer {
 	
 	public static final Item SYRINGE = new SwordItem(Syringe.INSTANCE, 0,0,new Item.Settings().group(ItemGroup.MISC).maxDamage(2));
-	public static final Item MIRRORBLADE = new SwordItem(mirror.INSTANCE, 10,0,new Item.Settings().group(ItemGroup.MISC).maxDamage(10));
+	public static final Item MIRRORBLADE = new SwordItem(mirror.INSTANCE, 0,0,new Item.Settings().group(ItemGroup.MISC).maxDamage(5000));
 	public static final Item SYRINGE_LIVING = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 	public static final Item SYRINGE_AQUATIC = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 	public static final Item SYRINGE_ARTHROPOD = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
@@ -24,6 +24,7 @@ public class apocalypse implements ModInitializer {
 	public static final Item MUTAGENS = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 	public static final Item RNABACKUP = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 	public static final Item ANTIMUTAGENS = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
+	public static final Item GENELOCK = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 	public static final Item RMIRROR = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 
 	@Override
@@ -42,8 +43,8 @@ public class apocalypse implements ModInitializer {
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "mutagens"), MUTAGENS);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "rnabackup"), RNABACKUP);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "antimutagens"), ANTIMUTAGENS);
+		Registry.register(Registry.ITEM, new Identifier("apocalypse", "genelock"), GENELOCK);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "mirrorblade"), MIRRORBLADE);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "rmirror"), RMIRROR);
-	}
-	
+	}	
 }

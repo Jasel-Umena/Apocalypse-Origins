@@ -19,7 +19,7 @@ public class mirror implements ToolMaterial {
 
     @Override
     public float getAttackDamage() {
-        return 5;
+        return 1;
     }
 
     @Override

@@ -31,7 +31,7 @@ public class apocalypse implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe"), SYRINGE);
-		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe"), SYRINGE_REINFORCED);
+		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe_reinforced"), SYRINGE_REINFORCED);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe_living"), SYRINGE_LIVING);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe_aquatic"), SYRINGE_AQUATIC);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe_arthropod"), SYRINGE_ARTHROPOD);

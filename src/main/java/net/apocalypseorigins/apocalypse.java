@@ -10,6 +10,7 @@ import net.minecraft.util.registry.Registry;
 public class apocalypse implements ModInitializer {
 	
 	public static final Item SYRINGE = new SwordItem(Syringe.INSTANCE, 0,0,new Item.Settings().group(ItemGroup.MISC).maxDamage(2));
+	public static final Item SYRINGE_REINFORCED = new SwordItem(syringe_reinforced.INSTANCE, 0,0,new Item.Settings().group(ItemGroup.MISC).maxDamage(1000));
 	public static final Item MIRRORBLADE = new SwordItem(mirror.INSTANCE, 0,0,new Item.Settings().group(ItemGroup.MISC).maxDamage(5000));
 	public static final Item SYRINGE_LIVING = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
 	public static final Item SYRINGE_AQUATIC = new Item(new Item.Settings().group(ItemGroup.MISC).maxCount(1));
@@ -30,6 +31,7 @@ public class apocalypse implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe"), SYRINGE);
+		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe"), SYRINGE_REINFORCED);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe_living"), SYRINGE_LIVING);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe_aquatic"), SYRINGE_AQUATIC);
 		Registry.register(Registry.ITEM, new Identifier("apocalypse", "syringe_arthropod"), SYRINGE_ARTHROPOD);
